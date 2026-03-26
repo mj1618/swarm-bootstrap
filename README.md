@@ -1,4 +1,4 @@
-# Swarm Starter
+# Swarm Boostrap
 
 This helps you run a pipeline of ralph loops from scratch to build a project in a zero-shot way.
 
