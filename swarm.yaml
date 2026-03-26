@@ -47,7 +47,7 @@ tasks:
       - Missing edge cases
       - Code quality issues
       - Anything that doesn't match the task requirements
-      - Test using a browser or run the tests
+      - Test using a browser (use playwright-cli for this)
 
       # Fix any issues
 
