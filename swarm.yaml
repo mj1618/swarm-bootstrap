@@ -22,6 +22,8 @@ tasks:
       Look under the ./swarm/tasks/ folder for a file suffixed with ".todo.md" - and claim it as a task by renaming it to ".processing.md".
       Make sure the file you choose doesn't have any dependencies that are not done.
       Make sure your work won't conflict with other work that is already in progress.
+      Fix issues you come across even if they are outside the scope of the task.
+      You don't have to look for them, but if you come across them - go and fix!
 
       # Implement the task
 
