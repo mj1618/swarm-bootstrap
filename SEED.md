@@ -1,6 +1,6 @@
 # Overview
 
-Look at @swarm.yaml
+Look at @swarm/swarm.yaml
 
 Your job is to look for a programming language that is available to you on this machine, and to build a small CLI tool that will run and manage the agent pipeline defined in swarm.yaml
 swarm.yaml defines a pipeline with dependencies, each task in the pipeline is an agent run with a fresh context window.
