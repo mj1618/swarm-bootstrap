@@ -31,6 +31,8 @@ Run the agent with streaming output and write this to log files.
 The log files should be gitignore'd.
 Ensure it is indicated to the user where the log files are and how to access them.
 
+Make sure the claude agent exits if claude sends a "type":"result" message.
+
 # Docs
 
 Save instructions to swarm-cli/README.md on how to run the script, or stop the agents, etc.
