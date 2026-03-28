@@ -26,8 +26,11 @@ Ensure there is a stop command which also kills all agents created by the CLI.
 
 Ensure the tool kills everything when a user ctrl-c's out of the npm start command.
 
+Run the agent with streaming output and write this to log files.
+The log files should be gitignore'd.
+Parse the streaming json into human readable logs before writing to the log files.
 Ensure it is indicated to the user where the log files are and how to access them.
-Show logs of running agents in the tool itself.
+Show logs of running agents in the tool when running in status mode and also in normal mode.
 
 # Docs
 
