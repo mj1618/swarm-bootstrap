@@ -2,7 +2,7 @@
 
 Look at @swarm/swarm.yaml
 
-Your job is to look for a programming language that is available to you on this machine, and to build a small CLI tool that will run and manage the agent pipeline defined in swarm.yaml
+Your job is to look for a programming language that is available to you on this machine, and to build a small CLI tool in ./swarm-cli/ that will run and manage the agent pipeline defined in swarm.yaml
 swarm.yaml defines a pipeline with dependencies, each task in the pipeline is an agent run with a fresh context window.
 The prompt is fed into the agent and run to completion.
 Once an agent completes the next agent in the pipeline is run.
@@ -25,16 +25,15 @@ The user should be able to see the progress of all agents, and be able to stop a
 Ensure there is a stop command which also kills all agents created by the CLI.
 
 Ensure the tool kills everything when a user ctrl-c's out of the npm start command.
+Make sure agents started by the tool are also force-killed.
 
 Run the agent with streaming output and write this to log files.
 The log files should be gitignore'd.
-Parse the streaming json into human readable logs before writing to the log files.
 Ensure it is indicated to the user where the log files are and how to access them.
-Show logs of running agents in the tool when running in status mode and also in normal mode.
 
 # Docs
 
-Save instructions to README.md on how to run the script, or stop the agents, etc.
+Save instructions to swarm-cli/README.md on how to run the script, or stop the agents, etc.
 
 Update .gitignore so that nothing is committed to the repo that shouldn't be.
 
