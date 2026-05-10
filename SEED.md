@@ -16,6 +16,7 @@ Finally test the script out and make sure it works properly.
 
 Look at whether there is codex or claude available on the local machine.
 Each agent should be run with skip permissions and in streaming mode.
+You should also override the system prompt in claude to be something simple.
 It should use the Opus model if in claude, or codex-5.3 if in codex.
 
 # Features
@@ -32,6 +33,14 @@ The log files should be gitignore'd.
 Ensure it is indicated to the user where the log files are and how to access them.
 
 Make sure the claude agent exits if claude sends a "type":"result" message.
+
+# Robustness
+
+Sometimes claude finishes its task but doesn't send the expected finish event.
+Also sometimes there is a bug where it may just hang anyway.
+
+We should be robust to these kinds of failures, as it will stop the entire pipeline.
+Detect these and take appropriate remediations.
 
 # Docs
 
